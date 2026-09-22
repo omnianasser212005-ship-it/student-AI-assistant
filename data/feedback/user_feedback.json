@@ -1,0 +1,58 @@
+[
+    {
+        "question": "What is overfitting in machine learning?",
+        "answer": "Overfitting in machine learning refers to the phenomenon where a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data.\n\nAccording to the study materials, overfitting can occur in various machine learning methods, including Neural Nets, Support Vector Machines (SVM), Nearest Neighbors, and Decision Trees.\n\nFor example, in Neural Nets, overfitting can happen when there are too many units and weights, allowing the model to fit every nuance of the training set. Similarly, in SVM, overfitting can occur when the value of sigma (std dev of Gaussian) is too small, or when the degree of the polynomial is too high.\n\nIn the case of Nearest Neighbors, overfitting can happen when the distance function is chosen to do well on the training set but less well on new data.\n\nTo minimize overfitting, various techniques can be used, such as:\n\n* Using cross-validation to choose a not too complex network (Neural Nets)\n* Using a validation set to decide when to stop training (Neural Nets)\n* Using k-NN for larger k (Nearest Neighbors)\n* Pruning the resulting tree based on performance on a validation set (Decision Trees)\n* Using cross-validation to choose the kernel parameters and the maximum value for the multipliers (SVM)\n\nSource:\nFile: quiz2.pdf\nPage: 29-31",
+        "rating": 3,
+        "feedback": "Rate: 2",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            }
+        ]
+    },
+    {
+        "question": "PS F:\\Downloads\\student-ai-assistant> What should be improved: Make the explanation shorter and use a simple example.",
+        "answer": "The provided study materials do not contain enough information to answer this question.\n\nThe study context is about Software Engineering and Artificial Intelligence, specifically covering topics such as search, knowledge representation and inference, and machine learning. However, the question about improving the explanation and using a simple example is not related to the provided study materials.\n\nIf you could provide more context or clarify the question, I would be happy to try and assist you further.",
+        "rating": 3,
+        "feedback": "Make the explanation shorter and use a simpl ...",
+        "sources": [
+            {
+                "file_name": "lec7.pdf",
+                "subject": "Software_Engineering",
+                "page": 1
+            },
+            {
+                "file_name": "lec7.pdf",
+                "subject": "Software_Engineering",
+                "page": 2
+            },
+            {
+                "file_name": "lec7.pdf",
+                "subject": "Software_Engineering",
+                "page": 4
+            },
+            {
+                "file_name": "lec1.pdf",
+                "subject": "Software_Engineering",
+                "page": 9
+            },
+            {
+                "file_name": "438614c2e5f2a2871b7ef89ffb506c45_final_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 1
+            }
+        ]
+    }
+]

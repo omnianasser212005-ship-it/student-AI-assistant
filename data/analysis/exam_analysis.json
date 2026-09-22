@@ -1,0 +1,167 @@
+{
+    "analysis": {
+        "topics": {
+            "LOGISTIC REGRESSION": 20,
+            "SVM": 30,
+            "SUPPORT VECTOR": 19,
+            "NEURAL NETWORK": 8,
+            "KERNEL": 25,
+            "POLYNOMIAL": 16,
+            "ADABOOST": 8,
+            "MUTUAL INFORMATION": 8,
+            "FEATURE SELECTION": 3,
+            "RADIAL BASIS": 5,
+            "BACKPROPAGATION": 4,
+            "DECISION TREE": 9,
+            "PRUNING": 8,
+            "CROSS VALIDATION": 1,
+            "OVERFITTING": 8,
+            "NEAREST NEIGHBOR": 20,
+            "K-NN": 2,
+            "SIGMOID": 19
+        },
+        "formats": {
+            "True / False": 48,
+            "Problem": 39,
+            "Question": 0,
+            "Part": 18,
+            "Points / Marks": 190
+        },
+        "wording": {
+            "Explain": 20,
+            "Calculate": 0,
+            "Justify": 8,
+            "Derive": 1,
+            "Compare": 1,
+            "Briefly": 13
+        },
+        "exam_stats": {
+            "1aaaf3360297b91047ad2120d92e5843_final_f02.pdf": {
+                "chunks": 28,
+                "formats": {
+                    "True / False": 1,
+                    "Problem": 7,
+                    "Question": 0,
+                    "Part": 0,
+                    "Points / Marks": 32
+                },
+                "wording": {
+                    "Explain": 0,
+                    "Calculate": 0,
+                    "Justify": 1,
+                    "Derive": 0,
+                    "Compare": 0,
+                    "Briefly": 1
+                }
+            },
+            "41387b48c364b127843885db7cd56b01_final_f01.pdf": {
+                "chunks": 28,
+                "formats": {
+                    "True / False": 10,
+                    "Problem": 6,
+                    "Question": 0,
+                    "Part": 0,
+                    "Points / Marks": 32
+                },
+                "wording": {
+                    "Explain": 2,
+                    "Calculate": 0,
+                    "Justify": 0,
+                    "Derive": 0,
+                    "Compare": 0,
+                    "Briefly": 2
+                }
+            },
+            "438614c2e5f2a2871b7ef89ffb506c45_final_f03.pdf": {
+                "chunks": 20,
+                "formats": {
+                    "True / False": 6,
+                    "Problem": 5,
+                    "Question": 0,
+                    "Part": 0,
+                    "Points / Marks": 22
+                },
+                "wording": {
+                    "Explain": 0,
+                    "Calculate": 0,
+                    "Justify": 2,
+                    "Derive": 0,
+                    "Compare": 0,
+                    "Briefly": 2
+                }
+            },
+            "7b98f36e1b7c80851e19b32d31dc4101_midterm_f02.pdf": {
+                "chunks": 24,
+                "formats": {
+                    "True / False": 13,
+                    "Problem": 6,
+                    "Question": 0,
+                    "Part": 1,
+                    "Points / Marks": 27
+                },
+                "wording": {
+                    "Explain": 2,
+                    "Calculate": 0,
+                    "Justify": 2,
+                    "Derive": 0,
+                    "Compare": 0,
+                    "Briefly": 4
+                }
+            },
+            "9010fa78deb635f95826725a14edbc6f_midterm_f01.pdf": {
+                "chunks": 19,
+                "formats": {
+                    "True / False": 10,
+                    "Problem": 6,
+                    "Question": 0,
+                    "Part": 0,
+                    "Points / Marks": 26
+                },
+                "wording": {
+                    "Explain": 5,
+                    "Calculate": 0,
+                    "Justify": 0,
+                    "Derive": 0,
+                    "Compare": 0,
+                    "Briefly": 1
+                }
+            },
+            "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf": {
+                "chunks": 22,
+                "formats": {
+                    "True / False": 7,
+                    "Problem": 4,
+                    "Question": 0,
+                    "Part": 0,
+                    "Points / Marks": 23
+                },
+                "wording": {
+                    "Explain": 2,
+                    "Calculate": 0,
+                    "Justify": 0,
+                    "Derive": 0,
+                    "Compare": 1,
+                    "Briefly": 2
+                }
+            },
+            "quiz2.pdf": {
+                "chunks": 56,
+                "formats": {
+                    "True / False": 1,
+                    "Problem": 5,
+                    "Question": 0,
+                    "Part": 17,
+                    "Points / Marks": 28
+                },
+                "wording": {
+                    "Explain": 9,
+                    "Calculate": 0,
+                    "Justify": 3,
+                    "Derive": 1,
+                    "Compare": 0,
+                    "Briefly": 1
+                }
+            }
+        }
+    }
+}
