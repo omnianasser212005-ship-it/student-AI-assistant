@@ -6,17 +6,19 @@ VECTOR_STORE_PATH = "data/vector_store"
 COLLECTION_NAME = "study_materials"
 
 
-# Load embedding model
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer(
+    "all-MiniLM-L6-v2"
+)
 
 
-# Connect to ChromaDB
 client = chromadb.PersistentClient(
     path=VECTOR_STORE_PATH
 )
 
-collection = client.get_collection(
-    name=COLLECTION_NAME
+
+collection = client.get_or_create_collection(
+    name=COLLECTION_NAME,
+    metadata={"hnsw:space": "cosine"}
 )
 
 
@@ -62,13 +64,95 @@ def search(
     )
 
     return results
-def get_file_chunks(subject, file_name):
+
+
+def get_file_chunks(
+    subject,
+    file_name
+):
 
     results = collection.get(
         where={
             "$and": [
-                {"subject": subject},
-                {"file_name": file_name}
+                {
+                    "subject": subject
+                },
+                {
+                    "file_name": file_name
+                }
+            ]
+        },
+        include=[
+            "documents",
+            "metadatas"
+        ]
+    )
+
+    return results
+
+
+def get_exam_files():
+
+    results = collection.get(
+        where={
+            "document_type": "exam"
+        },
+        include=[
+            "metadatas"
+        ]
+    )
+
+    metadatas = results.get(
+        "metadatas",
+        []
+    )
+
+    exam_files = []
+
+    for metadata in metadatas:
+
+        if not metadata:
+            continue
+
+        item = {
+            "subject": metadata.get(
+                "subject",
+                "Unknown"
+            ),
+            "file_name": metadata.get(
+                "file_name",
+                "Unknown"
+            )
+        }
+
+        if item not in exam_files:
+
+            exam_files.append(item)
+
+    return sorted(
+        exam_files,
+        key=lambda x: (
+            x["subject"],
+            x["file_name"]
+        )
+    )
+def get_exam_chunks(
+    subject,
+    file_name
+):
+
+    results = collection.get(
+        where={
+            "$and": [
+                {
+                    "subject": subject
+                },
+                {
+                    "file_name": file_name
+                },
+                {
+                    "document_type": "exam"
+                }
             ]
         },
         include=[

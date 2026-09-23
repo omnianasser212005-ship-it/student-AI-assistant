@@ -18,72 +18,81 @@ def load_exam_analysis():
     return data["analysis"]
 
 
+import ollama
+
+
 def generate_practice_questions(
-    analysis,
-    num_questions=5
+    exam_documents,
+    num_questions=5,
+    subject=None
 ):
 
-    all_questions = []
+    if not exam_documents:
 
-    for i in range(1, num_questions + 1):
+        return (
+            "No previous exams were found "
+            "for the selected subject."
+        )
 
-        print(f"\nGenerating question {i}/{num_questions}...")
+    exam_context = "\n\n".join(
+        exam_documents
+    )
 
-        prompt = f"""
+    prompt = f"""
 You are an academic practice-question generator.
 
-Generate EXACTLY ONE NEW practice question.
+Generate exactly {num_questions} NEW practice questions.
 
-Use ONLY the exam analysis below.
+Use ONLY the previous exam content below.
 
-The question must follow the observed style
-of the previous exams.
+Selected subject:
+{subject or "All Subjects"}
 
-Return ONLY this format:
+IMPORTANT RULES:
 
-QUESTION
+1. Generate questions based only on the provided exams.
+2. Follow the style and topics of the previous exams.
+3. Do not copy questions exactly.
+4. Do not invent topics that do not appear in the exams.
+5. Do not predict the real exam.
+6. Each question should be useful for student practice.
+7. Include a short model answer.
+8. Number every question clearly.
+
+Return this format:
+
+Question 1
 Type: ...
 Topic: ...
 Question: ...
 Short model answer: ...
 
-IMPORTANT:
-- Generate ONE question only.
-- Do not generate a second question.
-- Do not copy an existing exam question.
-- Do not predict the real exam.
-- Keep the answer short.
+Question 2
+Type: ...
+Topic: ...
+Question: ...
+Short model answer: ...
 
-EXAM ANALYSIS:
+PREVIOUS EXAMS:
 
-{analysis}
+{exam_context}
 """
 
-        response = ollama.chat(
-            model="llama3.2",
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ],
-            options={
-                "temperature": 0.3,
-                "num_predict": 300
+    response = ollama.chat(
+        model="llama3.2",
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
             }
-        )
-
-        question = response["message"]["content"].strip()
-
-        all_questions.append(
-            f"Question {i}\n{question}"
-        )
-
-        print(f"Question {i} completed.")
-
-    return "\n\n==============================\n\n".join(
-        all_questions
+        ],
+        options={
+            "temperature": 0.3,
+            "num_predict": 2000
+        }
     )
+
+    return response["message"]["content"].strip()
 
 
 if __name__ == "__main__":

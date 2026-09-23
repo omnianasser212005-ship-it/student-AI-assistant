@@ -153,45 +153,65 @@ USER FEEDBACK:
 ------------------------
 """
 
+    
     prompt = f"""
-You are a feedback-learning component
-for an academic study assistant.
+You are a feedback-learning component for an
+academic study assistant.
 
-Analyze the user feedback below.
+Analyze the user feedback below and extract ONLY
+general preferences about HOW the assistant should
+write its answers.
 
-Your task is to identify GENERAL response
-improvement rules that can help the assistant
-answer future students better.
+IMPORTANT:
 
-Do NOT extract academic facts from the feedback.
+1. Do NOT create academic knowledge rules.
 
-Do NOT invent facts.
+2. Do NOT create rules about whether information
+   exists in the study materials.
 
-Focus ONLY on response behavior, such as:
+3. Do NOT create rules that tell the assistant
+   when to refuse an answer.
 
-- clarity
-- conciseness
-- explanation depth
-- organization
-- use of examples
-- difficulty level
-- source usage
-- avoiding unsupported information
+4. Do NOT create rules about specific subjects,
+   topics, formulas, or facts.
 
-Return ONLY a JSON array.
+5. Do NOT change the retrieval behavior.
+
+6. Do NOT change the requirement to answer using
+   the provided study context.
+
+7. Only learn presentation and communication
+   preferences, such as:
+
+   - concise vs detailed
+   - simple vs technical language
+   - explanation style
+   - organization
+   - use of examples
+   - use of bullet points
+   - preferred answer length
+
+8. Learned rules must NEVER override the
+   study context or the main system instructions.
+
+Return ONLY a JSON array of short general
+response-style rules.
 
 Example:
 
 [
-    "Use simpler explanations when possible.",
-    "Keep answers concise unless the student asks for detail.",
-    "Use examples from the provided study material when available."
+    "Keep explanations concise.",
+    "Use simple language when possible.",
+    "Use a practical example when the study material supports one.",
+    "Organize long answers using bullet points."
 ]
 
 USER FEEDBACK:
 
 {feedback_text}
 """
+
+
 
     print("Learning from user feedback...")
 

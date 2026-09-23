@@ -1,0 +1,5 @@
+In AI we usually think of a "typical" search space as being a tree with uniform branching factor b 
+and depth d. The depth parameter may represent the number of steps in a plan of action or the 
+number of moves in a game. The branching factor reflects the number of different choices that we 
+have at each step. It is easy to see that the number of states in such a tree grows exponentially with 
+the

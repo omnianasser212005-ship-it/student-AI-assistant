@@ -552,3 +552,174 @@ for document_type in sorted(types):
         f"- {document_type}: "
         f"{count} chunks"
     )
+    
+# =========================
+# Upload Single PDF
+# =========================
+
+def ingest_uploaded_pdf(
+    pdf_path,
+    subject
+):
+    """
+    Process one uploaded PDF and add it
+    to the existing ChromaDB collection.
+    """
+
+    file_name = os.path.basename(pdf_path)
+
+    print(
+        f"\nProcessing uploaded PDF: {file_name}"
+    )
+
+    doc = pymupdf.open(pdf_path)
+
+    pages_text = []
+    full_file_text = ""
+
+    # =========================
+    # Extract text
+    # =========================
+
+    for page_number, page in enumerate(
+        doc,
+        start=1
+    ):
+
+        page_text = (
+            page.get_text()
+            .strip()
+        )
+
+        # OCR fallback
+        if not page_text:
+
+            print(
+                f"Page {page_number}: "
+                "No text found, running OCR..."
+            )
+
+            page_text = ocr_page(page)
+
+        if page_text:
+
+            pages_text.append(
+                (
+                    page_number,
+                    page_text
+                )
+            )
+
+            full_file_text += (
+                f"\n\n"
+                f"--- Page {page_number} ---\n"
+                f"{page_text}"
+            )
+
+    doc.close()
+
+    if not pages_text:
+
+        raise ValueError(
+            "No readable text was found in the PDF."
+        )
+
+    # =========================
+    # Classify document
+    # =========================
+
+    print(
+        "Classifying uploaded document..."
+    )
+
+    document_type = classify_document(
+        full_file_text
+    )
+
+    print(
+        f"Document type: {document_type}"
+    )
+
+    # =========================
+    # Create chunks
+    # =========================
+
+    documents = []
+    metadatas = []
+    ids = []
+
+    for page_number, page_text in pages_text:
+
+        chunks = splitter.split_text(
+            page_text
+        )
+
+        for chunk_number, chunk in enumerate(
+            chunks,
+            start=1
+        ):
+
+            chunk_id = (
+                f"{subject}_"
+                f"{file_name}_"
+                f"P{page_number}_"
+                f"C{chunk_number}"
+            )
+
+            documents.append(chunk)
+
+            ids.append(chunk_id)
+
+            metadatas.append({
+                "subject": subject,
+                "file_name": file_name,
+                "page": page_number,
+                "chunk_id": chunk_id,
+                "document_type": document_type
+            })
+
+    if not documents:
+
+        raise ValueError(
+            "No text chunks were created from the PDF."
+        )
+
+    # =========================
+    # Generate embeddings
+    # =========================
+
+    print(
+        "Generating embeddings..."
+    )
+
+    embeddings = model.encode(
+        documents,
+        show_progress_bar=True
+    )
+
+    # =========================
+    # Add to existing ChromaDB
+    # =========================
+
+    print(
+        "Adding document to ChromaDB..."
+    )
+
+    collection.add(
+        ids=ids,
+        documents=documents,
+        embeddings=embeddings.tolist(),
+        metadatas=metadatas
+    )
+
+    print(
+        f"Uploaded successfully: {file_name}"
+    )
+
+    return {
+        "file_name": file_name,
+        "subject": subject,
+        "document_type": document_type,
+        "chunks": len(documents)
+    }
+

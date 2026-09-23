@@ -1,8 +1,8 @@
 import ollama
 
-from retrieval import search
+from src.retrieval import search
 
-from feedback_learning import (
+from src.feedback_learning import (
     get_learning_context,
     add_feedback,
     learn_from_feedback
@@ -48,7 +48,7 @@ CONTENT:
 
 def generate_answer(
     question,
-    top_k=5,
+    top_k=8,
     subject=None,
     document_type=None
 ):
@@ -280,7 +280,7 @@ if __name__ == "__main__":
 
     result = generate_answer(
         question=question,
-        top_k=5
+        top_k=8
     )
 
     print("\n==============================")

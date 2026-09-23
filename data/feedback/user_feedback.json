@@ -54,5 +54,428 @@
                 "page": 1
             }
         ]
+    },
+    {
+        "question": "What is overfitting in machine learning?",
+        "answer": "Overfitting in machine learning refers to when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data.\n\nAccording to the study materials, overfitting can occur in different machine learning methods, including Neural Nets, Decision Trees, and SVM. In Neural Nets, overfitting can happen by having too many units and weights, allowing the model to fit every nuance of the training set. In Decision Trees, overfitting can occur by adding new tests to the tree to correctly classify every data point in the training set.\n\nThe provided study materials do not contain enough information to provide a comprehensive explanation of overfitting. However, it is clear that overfitting is a common issue in machine learning and can be addressed by techniques such as regularization, cross-validation, and pruning.\n\nSource:\nFile: quiz2.pdf\nPage: 29-31",
+        "rating": 3,
+        "feedback": "Make the explanation shorter and use a simpl ...",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            }
+        ]
+    },
+    {
+        "question": "What is overfitting in machine learning?",
+        "answer": "Overfitting in machine learning refers to when a model is too complex and fits the training data too well, resulting in poor performance on new, unseen data.\n\nAccording to the study materials, overfitting can occur in various machine learning methods, including Neural Nets, SVM, Nearest Neighbors, and Decision Trees.\n\nFor example, in Neural Nets, overfitting can happen when there are too many units and weights, allowing the model to fit every nuance of the training set, but not generalizing well to new data.\n\nThe provided study materials do not contain enough information to provide a more detailed explanation of overfitting.\n\nSource:\nFile: quiz2.pdf\nPage: 30",
+        "rating": 3,
+        "feedback": "Make the explanation shorter and use a simpl ...",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            }
+        ]
+    },
+    {
+        "question": "What is overfitting in machine learning?",
+        "answer": "Overfitting in machine learning occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data.\n\nAccording to the study materials, overfitting can happen in different machine learning methods, such as neural nets, decision trees, and support vector machines (SVMs). In neural nets, overfitting can occur when there are too many units and weights, allowing the model to fit every nuance of the training set. In decision trees, overfitting can occur when the tree is too complex and adds unnecessary tests to correctly classify every data point in the training set.\n\nTo reduce overfitting, various techniques can be used, such as:\n\n* Using cross-validation to choose a not-too-complex network or kernel parameters\n* Using a validation set to decide when to stop training\n* Pruning the resulting tree based on performance on a validation set\n* Regularization techniques, such as L1 or L2 regularization, to reduce the complexity of the model\n\nFor example, in the case of SVMs, overfitting can occur when the value of sigma (the standard deviation of the Gaussian) is too small, or when the degree of the polynomial is too high. Using cross-validation to choose the kernel parameters and the maximum value for the multipliers can help reduce overfitting.\n\nThe provided study materials do not contain enough information to provide a more detailed explanation of overfitting.\n\nSource:\nFile: quiz2.pdf\nPage: 30",
+        "rating": 2,
+        "feedback": "i want the answer be short",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            },
+            {
+                "file_name": "7b98f36e1b7c80851e19b32d31dc4101_midterm_f02.pdf",
+                "subject": "Previous_Exams",
+                "page": 3
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 9
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 2
+            }
+        ]
+    },
+    {
+        "question": "What is overfitting in machine learning?",
+        "answer": "Overfitting in machine learning refers to when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data.\n\nAccording to the provided study materials, overfitting can occur in various machine learning methods, including neural nets, decision trees, and support vector machines (SVMs).\n\nIn the context of neural nets, overfitting can happen when there are too many units and weights, allowing the model to fit every nuance of the training set. Training for too long can also lead to overfitting.\n\nIn decision trees, overfitting can occur when the tree is too complex, with too many tests added to correctly classify every data point in the training set.\n\nIn SVMs, overfitting can happen when the regularization parameter C is too small, allowing the Lagrange multipliers to get too large.\n\nTo minimize overfitting, various techniques can be used, such as:\n\n* Using cross-validation to choose a not-too-complex network or kernel parameters\n* Using a validation set to decide when to stop training\n* Pruning the resulting tree based on performance on a validation set\n* Using regularization techniques, such as L1 or L2 regularization, to reduce the impact of overfitting\n\nFor example, in the case of SVMs, using a larger value for the regularization parameter C can help reduce overfitting.\n\nSource:\nFile: quiz2.pdf\nPage: 30",
+        "rating": 5,
+        "feedback": "",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            },
+            {
+                "file_name": "7b98f36e1b7c80851e19b32d31dc4101_midterm_f02.pdf",
+                "subject": "Previous_Exams",
+                "page": 3
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 9
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 2
+            }
+        ]
+    },
+    {
+        "question": "What is overfitting?\n",
+        "answer": "The provided study materials do not contain enough information to answer this question.\n\nThe study materials provide explanations of how different machine learning methods can overfit, such as having too many units in a neural network, training for too long, or choosing a value of sigma (std dev of Gaussian) too small in RBF kernels. However, they do not provide a clear definition of overfitting or its consequences.\n\nTherefore, I cannot provide a concise explanation of overfitting.",
+        "rating": 3,
+        "feedback": "make short answer\n",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            },
+            {
+                "file_name": "lec5.pdf",
+                "subject": "Software_Engineering",
+                "page": 7
+            },
+            {
+                "file_name": "7b98f36e1b7c80851e19b32d31dc4101_midterm_f02.pdf",
+                "subject": "Previous_Exams",
+                "page": 8
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 9
+            }
+        ]
+    },
+    {
+        "question": "What is overfitting?\n",
+        "answer": "The provided study materials do not contain enough information to answer this question.\n\nThe study materials provide explanations of how different machine learning methods can overfit, such as having too many units in a neural network, training for too long, or choosing a value of sigma (std dev of Gaussian) too small in RBF kernels. However, they do not provide a clear definition of overfitting or its consequences.\n\nTherefore, I cannot provide a concise explanation of overfitting.",
+        "rating": 3,
+        "feedback": "make short answer\n",
+        "sources": [
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 30
+            },
+            {
+                "file_name": "quiz2.pdf",
+                "subject": "Previous_Exams",
+                "page": 29
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 11
+            },
+            {
+                "file_name": "lec5.pdf",
+                "subject": "Software_Engineering",
+                "page": 7
+            },
+            {
+                "file_name": "7b98f36e1b7c80851e19b32d31dc4101_midterm_f02.pdf",
+                "subject": "Previous_Exams",
+                "page": 8
+            },
+            {
+                "file_name": "e422ff477d12ba1bf2544e6293535c51_midterm_f03.pdf",
+                "subject": "Previous_Exams",
+                "page": 9
+            }
+        ]
+    },
+    {
+        "question": "what's the main Project Sponsor",
+        "answer": "The main Project Sponsor is a person (or group) who has an interest in the system's success.\n\nAccording to the study material, the Project Sponsor develops the initial vision of the new system, works throughout the SDLC to ensure the project is moving in the right direction from the business perspective, and serves as the primary point of contact for the project team.\n\nExample: In the context of the provided study material, Dr. Hamada I. AbdulWakel is mentioned as the Project Sponsor.\n\nSource: File: Untitled 3#.pdf, Page: 6",
+        "rating": 5,
+        "feedback": "make more ",
+        "sources": [
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Untitled  1#.pdf",
+                "subject": "dr-Hamada",
+                "page": 21
+            },
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 2
+            },
+            {
+                "file_name": "Untitled hamada  4#.pdf",
+                "subject": "dr-Hamada",
+                "page": 12
+            }
+        ]
+    },
+    {
+        "question": "What's the main SDLC",
+        "answer": "The main System Development Life Cycle (SDLC) is a formalized approach or series of steps that are used to develop an information system. According to the study materials, the SDLC is composed of four phases: Planning, Analysis, Design, and Implementation.\n\nHere is a brief overview of each phase:\n\n* Planning: This phase involves determining why build the system, who will use it, when it will be ready, and where it will be implemented.\n* Analysis: This phase involves gathering and analyzing data to understand the business needs and requirements of the system.\n* Design: This phase involves designing the system and creating a detailed plan for its implementation.\n* Implementation: This phase involves delivering the system to the users and ensuring that it is properly installed and configured.\n\nThe four phases of the SDLC are interconnected and rely on each other to produce deliverables that are used in the implementation phase.\n\nExample: The planning phase involves identifying the business needs and requirements of the system, which is then analyzed in the analysis phase. The results of the analysis phase are then used to design the system in the design phase, and the final design is implemented in the implementation phase.\n\nSource:\nFile: Lec 2 hamada.pdf\nSubject: dr-Hamada\nPage: 7",
+        "rating": 3,
+        "feedback": "explain more in example",
+        "sources": [
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Untitled  1#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 6
+            }
+        ]
+    },
+    {
+        "question": "what's the main SDLC\n",
+        "answer": "The main steps of the System Development Life Cycle (SDLC) are:\n\n* Planning\n* Analysis\n* Design\n* Implementation\n\nThese four phases are the core components of the SDLC, and they are often referred to as the \"major attributes\" of the SDLC.\n\nSource: File: Lec 2 hamada.pdf, Subject: dr-Hamada, Page: 6\n\nNote: The other sources (dr_hamada, Untitled 1#.pdf, Untitled 3#.pdf, Lec 2 hamada.pdf) also mention the same four phases, but the above answer is based on the specific page mentioned in the question.",
+        "rating": 3,
+        "feedback": "make answer more explain",
+        "sources": [
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Untitled  1#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 6
+            }
+        ]
+    },
+    {
+        "question": "what's the main SDLC\n",
+        "answer": "The main steps of the System Development Life Cycle (SDLC) are:\n\n* Planning\n* Analysis\n* Design\n* Implementation\n\nThese four phases are the core components of the SDLC, and they are often referred to as the \"major attributes\" of the SDLC.\n\nSource: File: Lec 2 hamada.pdf, Subject: dr-Hamada, Page: 6\n\nNote: The other sources (dr_hamada, Untitled 1#.pdf, Untitled 3#.pdf, Lec 2 hamada.pdf) also mention the same four phases, but the above answer is based on the specific page mentioned in the question.",
+        "rating": 3,
+        "feedback": "make answer more explain",
+        "sources": [
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Untitled  1#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 6
+            }
+        ]
+    },
+    {
+        "question": "what's the main SDLC\n",
+        "answer": "The main steps of the System Development Life Cycle (SDLC) are:\n\n* Planning\n* Analysis\n* Design\n* Implementation\n\nThese four phases are the core components of the SDLC, and they are often referred to as the \"major attributes\" of the SDLC.\n\nSource: File: Lec 2 hamada.pdf, Subject: dr-Hamada, Page: 6\n\nNote: The other sources (dr_hamada, Untitled 1#.pdf, Untitled 3#.pdf, Lec 2 hamada.pdf) also mention the same four phases, but the above answer is based on the specific page mentioned in the question.",
+        "rating": 3,
+        "feedback": "make answer more explain",
+        "sources": [
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 5
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 7
+            },
+            {
+                "file_name": "Untitled  1#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Untitled 3#.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr-Hamada",
+                "page": 6
+            },
+            {
+                "file_name": "Lec 2 hamada.pdf",
+                "subject": "dr_hamada",
+                "page": 6
+            }
+        ]
     }
 ]
